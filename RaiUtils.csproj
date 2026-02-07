@@ -7,7 +7,7 @@
     <Authors>Rainer Burkhardt</Authors>
     <Description>Random, Email, ParameterDictionary</Description>
     <!--<PackageDescription>Random, Email, ParameterDictionary</PackageDescription>-->
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>email, parameter dictionary, random, core</PackageTags>
@@ -23,7 +23,6 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.json" Version="13.0.3" />
-    <PackageReference Include="xunit" Version="2.9.2" />
   </ItemGroup>
 
 </Project>
