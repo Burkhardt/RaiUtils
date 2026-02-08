@@ -1,28 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-<PropertyGroup>
-    <Title>RaiUtils</Title>
-    <PackageId>RaiUtils</PackageId>
-    <Version>2.3.0</Version>
-    <Authors>Rainer Burkhardt</Authors>
-    <Description>Random, Email, ParameterDictionary</Description>
-    <!--<PackageDescription>Random, Email, ParameterDictionary</PackageDescription>-->
-    <TargetFramework>net10.0</TargetFramework>
-    <NoWarn>$(NoWarn);CS1591</NoWarn>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageTags>email, parameter dictionary, random, core</PackageTags>
-    <IsPackable>true</IsPackable>
-    <ProjectURL>https://github.com/Burkhardt/RaiUtils</ProjectURL>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
-    <RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
-    <RepositoryType>github</RepositoryType>
-    <PackageReleaseNotes>Version for netstandard2.1, .net10</PackageReleaseNotes>
-    <!--<PackageIcon></PackageIcon>-->
-  </PropertyGroup>
+	<PropertyGroup>
+		<Title>RaiUtils</Title>
+		<PackageId>RaiUtilsCore</PackageId>
+		<Version>2.3.1</Version>
+		<Authors>Rainer Burkhardt</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>Random, Email, ParameterDictionary</Description>
+		<!--<PackageDescription>Random,
+		Email, ParameterDictionary</PackageDescription>-->
+		<TargetFramework>net10.0</TargetFramework>
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageTags>email, parameter dictionary, random, core</PackageTags>
+		<IsPackable>true</IsPackable>
+		<ProjectURL>https://github.com/Burkhardt/RaiUtils</ProjectURL>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
+		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
+		<RepositoryType>github</RepositoryType>
+		<PackageReleaseNotes>Version for netstandard2.1, .net10</PackageReleaseNotes>
+		<!--<PackageIcon></PackageIcon>-->
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.json" Version="13.0.4" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.json" Version="13.0.4" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Include="hardcastle.png" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>
