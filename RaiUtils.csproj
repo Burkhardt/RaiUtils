@@ -3,7 +3,7 @@
 <PropertyGroup>
     <Title>RaiUtils</Title>
     <PackageId>RaiUtils</PackageId>
-    <Version>2.1.0</Version>
+    <Version>2.3.0</Version>
     <Authors>Rainer Burkhardt</Authors>
     <Description>Random, Email, ParameterDictionary</Description>
     <!--<PackageDescription>Random, Email, ParameterDictionary</PackageDescription>-->
@@ -17,12 +17,12 @@
     <Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
     <RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
-    <PackageReleaseNotes>Version for netstandard2.1</PackageReleaseNotes>
+    <PackageReleaseNotes>Version for netstandard2.1, .net10</PackageReleaseNotes>
     <!--<PackageIcon></PackageIcon>-->
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.json" Version="13.0.4" />
   </ItemGroup>
 
 </Project>
