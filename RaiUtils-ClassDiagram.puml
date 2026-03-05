@@ -1,0 +1,64 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+show fields
+show methods
+
+title RaiUtils Class Diagram
+
+class "RaiUtils.Email" as RaiUtils_Email {
+  -address : string
+  +Valid : bool
+  +Invalid : bool
+  +ToString() : string
+}
+
+class "RaiUtils.ParameterDictionary" as RaiUtils_ParameterDictionary {
+  +ParameterDictionary(paramArray : System.Collections.Specialized.NameValueCollection)
+}
+
+class "RaiUtils.SearchExpression" as RaiUtils_SearchExpression {
+  -conditions : List<string>
+  +ConditionsAsString : string
+  +IsMatch(obj : object) : bool
+  +SearchExpression(pattern : string)
+}
+
+class "RaiUtils.JsonConversionExtensions" as RaiUtils_JsonConversionExtensions <<static>> {
+  +ToDictionary(json : Newtonsoft.Json.Linq.JObject) : IDictionary<string, object>
+  +ToArray(array : Newtonsoft.Json.Linq.JArray) : object[]
+}
+
+class "RaiUtils.RandomExtensions" as RaiUtils_RandomExtensions <<static>> {
+  +Random<T>(list : IEnumerable<T>, rand : Random) : T
+  +Shuffle<T>(source : IEnumerable<T>) : IEnumerable<T>
+  +Shuffle<T>(source : IEnumerable<T>, rand : Random) : IEnumerable<T>
+  +Shuffle<T>(list : IList<T>)
+  +Shuffle<T>(list : IList<T>, rand : Random)
+  +TakeAny<T>(source : IEnumerable<T>, take : int) : IEnumerable<T>
+}
+
+class "System.Collections.Specialized.StringDictionary" as System_Collections_Specialized_StringDictionary
+class "System.Collections.Specialized.NameValueCollection" as System_Collections_Specialized_NameValueCollection
+class "Newtonsoft.Json.Linq.JObject" as Newtonsoft_Json_Linq_JObject
+class "Newtonsoft.Json.Linq.JArray" as Newtonsoft_Json_Linq_JArray
+
+RaiUtils_ParameterDictionary --|> System_Collections_Specialized_StringDictionary
+RaiUtils_ParameterDictionary ..> System_Collections_Specialized_NameValueCollection : ctor input
+RaiUtils_JsonConversionExtensions ..> Newtonsoft_Json_Linq_JObject : extension on
+RaiUtils_JsonConversionExtensions ..> Newtonsoft_Json_Linq_JArray : extension on
+
+note right of RaiUtils_SearchExpression
+  Pattern features:
+  * wildcard
+  + AND within token
+  field=value scoped matching
+end note
+
+note bottom
+  OsLib relationship:
+  No direct inheritance or type usage from OsLib
+  is present in current RaiUtils source files.
+end note
+
+@enduml

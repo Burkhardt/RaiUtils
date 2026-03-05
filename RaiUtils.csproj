@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtilsCore</PackageId>
-		<Version>2.3.1</Version>
+		<Version>3.0.1</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -20,10 +20,13 @@
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
 		<PackageReleaseNotes>Version for netstandard2.1, .net10</PackageReleaseNotes>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<!--<PackageIcon></PackageIcon>-->
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Remove="tests/**/*.cs" />
 		<PackageReference Include="Newtonsoft.json" Version="13.0.4" />
 		<None Include="README.md" Pack="true" PackagePath="\" />
 		<None Include="hardcastle.png" Pack="true" PackagePath="" />
