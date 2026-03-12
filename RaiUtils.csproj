@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtilsCore</PackageId>
-		<Version>3.2.0</Version>
+		<Version>3.2.1</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -19,7 +19,7 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-		<PackageReleaseNotes>Version for netstandard2.1, .net10</PackageReleaseNotes>
+		<PackageReleaseNotes>3.2.1 documents the shared cloud-root contract used alongside OsLib and JsonPit.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<!--<PackageIcon></PackageIcon>-->

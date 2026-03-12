@@ -4,7 +4,7 @@
 
 _formerly_ __RaiUtilsCore__
 
-## 2.3.1
+## 3.2.1
 
 - Targets `net10.0` and packages as `RaiUtilsCore`.
 - Provides utility helpers for:
@@ -54,6 +54,16 @@ RaiUtils
 
 - NuGet package dependency: `Newtonsoft.Json`.
 - No direct code dependency on OsLib types is present in current RaiUtils source.
+
+## cross-package cloud root convention
+
+RaiUtils does not resolve cloud roots itself, but it is intended to stay compatible with the same machine-local configuration contract used by OsLib and JsonPit.
+
+Recommended shared contract across .NET and upcoming Python packages:
+- Use `OSLIB_CLOUD_ROOT_GOOGLEDRIVE` for explicit Google Drive roots.
+- Use `OSLIB_CLOUD_CONFIG` for an explicit `cloudstorage.ini` file.
+- Reuse the same INI keys: `dropbox`, `onedrive`, `googledrive` or `google_drive`, `icloud` or `icloud_drive`.
+- Prefer explicit Ubuntu Google Drive configuration over probe-only assumptions when packages are used together in development or deployment tooling.
 
 ## nuget
 

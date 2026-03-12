@@ -121,3 +121,10 @@ This document provides a detailed, foldable API overview.
 
 - Current RaiUtils source does not inherit from or reference OsLib types directly.
 - No OsLib base classes are present in this API surface.
+
+## Shared Cloud Root Contract
+
+- RaiUtils does not discover cloud roots directly.
+- When RaiUtils is used alongside OsLib or JsonPit, companion packages should share the same machine-local convention for cloud-backed storage paths.
+- Recommended shared keys and variables: `OSLIB_CLOUD_ROOT_GOOGLEDRIVE`, `OSLIB_CLOUD_CONFIG`, and the `cloudstorage.ini` keys `dropbox`, `onedrive`, `googledrive` or `google_drive`, `icloud` or `icloud_drive`.
+- On Ubuntu development machines, prefer explicit Google Drive configuration over probe-only behavior so the .NET and Python package families resolve the same root consistently.
