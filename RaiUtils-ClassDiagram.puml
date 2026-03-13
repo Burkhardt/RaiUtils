@@ -1,4 +1,4 @@
-@startuml
+@startuml RaiUtils-Class-Diagram
 
 skinparam classAttributeIconSize 0
 show fields
