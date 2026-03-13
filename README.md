@@ -60,9 +60,9 @@ RaiUtils
 RaiUtils does not resolve cloud roots itself, but it is intended to stay compatible with the same machine-local configuration contract used by OsLib and JsonPit.
 
 Recommended shared contract across .NET and upcoming Python packages:
-- Use `OSLIB_CLOUD_ROOT_GOOGLEDRIVE` for explicit Google Drive roots.
-- Use `OSLIB_CLOUD_CONFIG` for an explicit `cloudstorage.ini` file.
-- Reuse the same INI keys: `dropbox`, `onedrive`, `googledrive` or `google_drive`, `icloud` or `icloud_drive`.
+- Use `osconfig.json` for explicit cloud roots.
+- Rely on `~/.config/RAIkeep/osconfig.json` on macOS/Linux or `%APPDATA%\RAIkeep\osconfig.json` on Windows.
+- Reuse the same `cloud` keys: `dropbox`, `onedrive`, `googledrive`, `icloud`.
 - Prefer explicit Ubuntu Google Drive configuration over probe-only assumptions when packages are used together in development or deployment tooling.
 
 ## nuget
