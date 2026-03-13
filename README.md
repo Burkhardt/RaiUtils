@@ -4,9 +4,10 @@
 
 _formerly_ __RaiUtilsCore__
 
-## 3.2.1
+## 3.3.0
 
 - Targets `net10.0` and packages as `RaiUtilsCore`.
+- Documents the shared `osconfig.json` convention used with OsLib and JsonPit.
 - Provides utility helpers for:
     - Email syntax validation (`Email`)
     - JSON token conversion to plain dictionaries/arrays (`JsonConversionExtensions`)
@@ -79,6 +80,10 @@ https://www.nuget.org/packages/RaiUtilsCore/
 ## detailed api
 
 - Foldable class and method-level documentation: [API.md](API.md)
+
+## release notes
+
+- Current release notes: [RELEASE_NOTES_3.3.0.md](RELEASE_NOTES_3.3.0.md)
 
 ## unit tests
 
