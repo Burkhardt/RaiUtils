@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtilsCore</PackageId>
-		<Version>3.3.0</Version>
+		<Version>3.4.0</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -19,7 +19,7 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-		<PackageReleaseNotes>3.3.0 documents the shared osconfig.json contract used alongside OsLib and JsonPit.</PackageReleaseNotes>
+		<PackageReleaseNotes>3.4.0 documents the shared RAIkeep package alignment and config contract used alongside OsLib and JsonPit.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<!--<PackageIcon></PackageIcon>-->
