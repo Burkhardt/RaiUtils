@@ -29,3 +29,13 @@ msbuild.log
 msbuild.err
 msbuild.wrn
 publish/RAI.Utils.2.1.0.nupkg
+
+# Local package build outputs
+artifacts/
+*.nupkg
+*.snupkg
+
+# Generated icon variants
+HardCastle128x128.png
+HardCastle192x192.png
+HardCastle512x512.png
