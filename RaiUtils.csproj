@@ -2,8 +2,8 @@
 
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
-		<PackageId>RaiUtilsCore</PackageId>
-		<Version>3.5.0</Version>
+		<PackageId>RaiUtils</PackageId>
+		<Version>3.5.1</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -19,17 +19,17 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-		<PackageReleaseNotes>3.5.0 documents the shared RAIkeep package alignment and config contract used alongside OsLib and JsonPit.</PackageReleaseNotes>
+		<PackageReleaseNotes>3.5.1 consolidates the NuGet package identity to RaiUtils while keeping the current API and workspace alignment intact.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-		<!--<PackageIcon></PackageIcon>-->
+		<PackageIcon>HardCastle.png</PackageIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<Compile Remove="tests/**/*.cs" />
-		<PackageReference Include="Newtonsoft.json" Version="13.0.4" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 		<None Include="README.md" Pack="true" PackagePath="\" />
-		<None Include="hardcastle.png" Pack="true" PackagePath="" />
+		<None Include="HardCastle.png" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>

@@ -2,9 +2,9 @@
 
 This document provides a detailed, foldable API overview.
 
-## 3.5.0 scope note
+## 3.5.1 scope note
 
-- RaiUtils aligns with the `3.5.0` `RAIkeep` package line.
+- RaiUtils aligns with the `3.5.1` `RAIkeep` package line.
 - The current supported cloud-backed provider claim for the stack is `OneDrive`, `GoogleDrive`, and `Dropbox`.
 - JsonPit now treats `PitItem.Id` as the canonical identifier; legacy `Name`-only payloads are normalized to `Id` in the framework layer.
 
