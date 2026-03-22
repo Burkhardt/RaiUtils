@@ -2,6 +2,12 @@
 
 This document provides a detailed, foldable API overview.
 
+## 3.5.0 scope note
+
+- RaiUtils aligns with the `3.5.0` `RAIkeep` package line.
+- The current supported cloud-backed provider claim for the stack is `OneDrive`, `GoogleDrive`, and `Dropbox`.
+- JsonPit now treats `PitItem.Id` as the canonical identifier; legacy `Name`-only payloads are normalized to `Id` in the framework layer.
+
 ## core types
 
 - <details>
@@ -126,5 +132,5 @@ This document provides a detailed, foldable API overview.
 
 - RaiUtils does not discover cloud roots directly.
 - When RaiUtils is used alongside OsLib or JsonPit, companion packages should share the same machine-local convention for cloud-backed storage paths.
-- Recommended shared convention: `osconfig.json` plus the `cloud` keys `dropbox`, `onedrive`, `googledrive`, and `icloud`.
+- Recommended shared convention: `osconfig.json` plus the `cloud` keys `dropbox`, `onedrive`, and `googledrive`.
 - On Ubuntu development machines, prefer explicit Google Drive configuration over probe-only behavior so the .NET and Python package families resolve the same root consistently.
