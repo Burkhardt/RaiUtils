@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtils</PackageId>
-		<Version>3.6.0</Version>
+		<Version>3.6.1</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -19,7 +19,7 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-		<PackageReleaseNotes>3.6.0 aligns RaiUtils with the 3.6.0 RAIkeep package line.</PackageReleaseNotes>
+		<PackageReleaseNotes>3.6.1 patch: aligns RaiUtils with OsLibCore 3.6.1 in correct publish order.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<PackageIcon>HardCastle.png</PackageIcon>
