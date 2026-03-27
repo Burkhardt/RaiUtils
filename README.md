@@ -4,12 +4,11 @@
 
 _formerly_ __RaiUtilsCore__
 
-## 3.5.2
+## 3.6.0
 
 - Targets `net10.0` and now packages on NuGet as `RaiUtils`.
-- Consolidates the previous split package naming between `RaiUtils` and `RaiUtilsCore` onto the single `RaiUtils` package id.
-- Aligns documentation with the shared `3.5.2` package line.
-- Aligns this package release with `OsLibCore 3.5.2` before downstream `RaiImage` and `JsonPit` fallback package updates.
+- Aligns documentation with the shared `3.6.0` package line.
+- Aligns this package release with `OsLibCore 3.6.0`.
 - Documents the supported cloud-backed provider claim used with OsLib and JsonPit: `OneDrive`, `GoogleDrive`, and `Dropbox`.
 - Notes the JsonPit identifier migration from `Name` to `Id`, including legacy normalization behavior.
 - Provides utility helpers for:
