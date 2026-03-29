@@ -4,6 +4,11 @@
 
 _formerly_ __RaiUtilsCore__
 
+## 3.7.2
+
+- Patch: aligns with OsLibCore 3.7.2 in the current publish order.
+- No API surface change in RaiUtils for this patch release.
+
 ## 3.7.1
 
 - Patch: aligns with `OsLibCore 3.7.1` in the correct NuGet publish order.
@@ -85,7 +90,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Current release notes: [RELEASE_NOTES_3.5.2.md](RELEASE_NOTES_3.5.2.md)
+- Current release notes: [RELEASE_NOTES_3.7.2.md](RELEASE_NOTES_3.7.2.md)
 
 ## unit tests
 

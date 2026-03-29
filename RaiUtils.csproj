@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtils</PackageId>
-		<Version>3.7.1</Version>
+		<Version>3.7.2</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -19,7 +19,7 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-		<PackageReleaseNotes>3.7.1 patch: aligns RaiUtils with OsLibCore 3.7.1 in the current publish order.</PackageReleaseNotes>
+		<PackageReleaseNotes>3.7.2 patch: release alignment after OsLibCore 3.7.2 with no API surface change.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<PackageIcon>HardCastle.png</PackageIcon>
