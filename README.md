@@ -4,14 +4,14 @@
 
 _formerly_ __RaiUtilsCore__
 
-## 3.7.2
+## 3.7.3
 
-- Patch: aligns with OsLibCore 3.7.2 in the current publish order.
+- Patch: aligns with OsLibCore 3.7.3 in the current publish order.
 - No API surface change in RaiUtils for this patch release.
 
-## 3.7.1
+## 3.7.3
 
-- Patch: aligns with `OsLibCore 3.7.1` in the correct NuGet publish order.
+- Patch: aligns with `OsLibCore 3.7.3` in the correct NuGet publish order.
 - Documents the supported cloud-backed provider claim used with OsLib and JsonPit: `OneDrive`, `GoogleDrive`, and `Dropbox`.
 - Notes the JsonPit identifier migration from `Name` to `Id`, including legacy normalization behavior.
 - Provides utility helpers for:
@@ -90,7 +90,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Current release notes: [RELEASE_NOTES_3.7.2.md](RELEASE_NOTES_3.7.2.md)
+- Current release notes: [RELEASE_NOTES_3.7.3.md](RELEASE_NOTES_3.7.3.md)
 
 ## unit tests
 
