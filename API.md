@@ -131,5 +131,5 @@ This document provides a detailed, foldable API overview.
 
 - RaiUtils does not discover cloud roots directly.
 - When RaiUtils is used alongside OsLib or JsonPit, companion packages should share the same machine-local convention for cloud-backed storage paths.
-- Recommended shared convention: `osconfig.json` plus the `cloud` keys `dropbox`, `onedrive`, and `googledrive`.
+- Recommended shared convention: `osconfig.json5` plus the PascalCase `Cloud` keys `Dropbox`, `OneDrive`, and `GoogleDrive`.
 - On Ubuntu development machines, prefer explicit Google Drive configuration over probe-only behavior so the .NET and Python package families resolve the same root consistently.

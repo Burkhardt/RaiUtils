@@ -67,9 +67,9 @@ RaiUtils
 RaiUtils does not resolve cloud roots itself, but it is intended to stay compatible with the same machine-local configuration contract used by OsLib and JsonPit.
 
 Recommended shared contract across .NET and upcoming Python packages:
-- Use `osconfig.json` for explicit cloud roots.
-- Rely on `~/.config/RAIkeep/osconfig.json` on macOS/Linux or `%APPDATA%\RAIkeep\osconfig.json` on Windows.
-- Reuse the same `cloud` keys: `dropbox`, `onedrive`, `googledrive`.
+- Use `osconfig.json5` for explicit cloud roots.
+- Rely on `~/.config/RAIkeep/osconfig.json5` on macOS/Linux or `%APPDATA%\RAIkeep\osconfig.json5` on Windows.
+- Reuse the same PascalCase `Cloud.*` keys: `Cloud.Dropbox`, `Cloud.OneDrive`, `Cloud.GoogleDrive`.
 - Prefer explicit Ubuntu Google Drive configuration over probe-only assumptions when packages are used together in development or deployment tooling.
 - Treat `OneDrive`, `GoogleDrive`, and `Dropbox` as the current supported provider set for the packaged stack.
 
