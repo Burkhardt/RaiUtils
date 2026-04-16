@@ -2,10 +2,10 @@
 
 This document provides a detailed, foldable API overview.
 
-## 3.7.3 scope note
+## 3.7.6 scope note
 
-- RaiUtils aligns with the `3.7.3` `RAIkeep` package line.
-- Patch release: no API changes; corrects publish order relative to `OsLibCore 3.7.3`.
+- RaiUtils aligns with the `3.7.6` `RAIkeep` package line.
+- Patch release: no API changes; aligns the package line relative to `OsLibCore 3.7.6`.
 
 ## core types
 
@@ -131,5 +131,5 @@ This document provides a detailed, foldable API overview.
 
 - RaiUtils does not discover cloud roots directly.
 - When RaiUtils is used alongside OsLib or JsonPit, companion packages should share the same machine-local convention for cloud-backed storage paths.
-- Recommended shared convention: `osconfig.json5` plus the PascalCase `Cloud` keys `Dropbox`, `OneDrive`, and `GoogleDrive`.
+- Recommended shared convention: `RAIkeep.json5` plus the PascalCase `Cloud` keys `Dropbox`, `OneDrive`, and `GoogleDrive`.
 - On Ubuntu development machines, prefer explicit Google Drive configuration over probe-only behavior so the .NET and Python package families resolve the same root consistently.

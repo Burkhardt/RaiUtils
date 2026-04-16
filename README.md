@@ -4,14 +4,10 @@
 
 _formerly_ __RaiUtilsCore__
 
-## 3.7.3
+## 3.7.6
 
-- Patch: aligns with OsLibCore 3.7.3 in the current publish order.
+- Patch: aligns RaiUtils with `OsLibCore 3.7.6` in the current package line.
 - No API surface change in RaiUtils for this patch release.
-
-## 3.7.3
-
-- Patch: aligns with `OsLibCore 3.7.3` in the correct NuGet publish order.
 - Documents the supported cloud-backed provider claim used with OsLib and JsonPit: `OneDrive`, `GoogleDrive`, and `Dropbox`.
 - Notes the JsonPit identifier migration from `Name` to `Id`, including legacy normalization behavior.
 - Provides utility helpers for:
@@ -67,8 +63,8 @@ RaiUtils
 RaiUtils does not resolve cloud roots itself, but it is intended to stay compatible with the same machine-local configuration contract used by OsLib and JsonPit.
 
 Recommended shared contract across .NET and upcoming Python packages:
-- Use `osconfig.json5` for explicit cloud roots.
-- Rely on `~/.config/RAIkeep/osconfig.json5` on macOS/Linux or `%APPDATA%\RAIkeep\osconfig.json5` on Windows.
+- Use `RAIkeep.json5` for explicit cloud roots.
+- Rely on `~/.config/RAIkeep.json5` unless the host application overrides the config bootstrap path.
 - Reuse the same PascalCase `Cloud.*` keys: `Cloud.Dropbox`, `Cloud.OneDrive`, `Cloud.GoogleDrive`.
 - Prefer explicit Ubuntu Google Drive configuration over probe-only assumptions when packages are used together in development or deployment tooling.
 - Treat `OneDrive`, `GoogleDrive`, and `Dropbox` as the current supported provider set for the packaged stack.
@@ -90,7 +86,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Current release notes: [RELEASE_NOTES_3.7.3.md](RELEASE_NOTES_3.7.3.md)
+- Current release notes: [RELEASE_NOTES_3.7.6.md](RELEASE_NOTES_3.7.6.md)
 
 ## unit tests
 
