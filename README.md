@@ -4,14 +4,14 @@
 
 _formerly_ __RaiUtilsCore__
 
-## 3.10.0
+## 3.10.1
 
-- Coordinated minor release: aligns RaiUtils with `OsLibCore 3.10.0` in the current package line.
-- No API surface change in RaiUtils for this minor release.
+- Coordinated patch release: aligns RaiUtils with `OsLibCore 3.10.1` in the current package line.
+- No API surface change in RaiUtils for this patch release.
 - Keeps RaiUtils aligned with the `mkdir` polymorphism update line introduced in OsLib.
 - Documents the supported cloud-backed provider claim used with OsLib and JsonPit: `OneDrive`, `GoogleDrive`, and `Dropbox`.
 - Notes the JsonPit identifier migration from `Name` to `Id`, including legacy normalization behavior.
-- Refreshes live package docs and diagram release markers for the `3.10.0` line.
+- Refreshes live package docs and diagram release markers for the `3.10.1` line.
 - Provides utility helpers for:
     - Email syntax validation (`Email`)
     - JSON token conversion to plain dictionaries/arrays (`JsonConversionExtensions`)
@@ -88,7 +88,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Current release notes: [RELEASE_NOTES_3.10.0.md](RELEASE_NOTES_3.10.0.md)
+- Current release notes: [RELEASE_NOTES_3.10.1.md](RELEASE_NOTES_3.10.1.md)
 
 ## unit tests
 
