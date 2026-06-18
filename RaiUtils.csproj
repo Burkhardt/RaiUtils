@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtils</PackageId>
-		<Version>3.10.1</Version>
+		<Version>3.10.2</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
