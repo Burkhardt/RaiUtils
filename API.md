@@ -2,10 +2,10 @@
 
 This document provides a detailed, foldable API overview.
 
-## 3.11.4 scope note
+## 3.11.5 scope note
 
-- RaiUtils aligns with the `3.11.4` `RAIkeep` package line.
-- Coordinated release: no API changes; aligns the package line relative to `OsLibCore 3.11.4`.
+- RaiUtils aligns with the `3.11.5` `RAIkeep` package line.
+- Coordinated release: no API changes; aligns the package line relative to `OsLibCore 3.11.5`.
 
 ## core types
 
