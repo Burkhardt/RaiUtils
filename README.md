@@ -6,14 +6,14 @@ RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/
 
 _formerly_ __RaiUtilsCore__
 
-## 4.0.0
+## 4.0.1
 
-- Coordinated major release prep: aligns RaiUtils with `OsLibCore 4.0.0` in the current package line.
+- Coordinated CR006 patch alignment with `OsLibCore 4.0.1`; no RaiUtils API or behavior changes from `4.0.0`.
 - No API surface change in RaiUtils for this release.
 - Keeps RaiUtils aligned with the `mkdir` polymorphism update line introduced in OsLib.
 - Documents the supported cloud-backed provider claim used with OsLib and JsonPit: `Dropbox`, `OneDrive`, `GoogleDrive`, and `ICloudDrive`.
 - Notes the JsonPit identifier migration from `Name` to `Id`, including legacy normalization behavior.
-- Refreshes live package docs and diagram release markers for the `4.0.0` line.
+- Refreshes live package docs for the `4.0.1` line.
 - Provides utility helpers for:
     - Email syntax validation (`Email`)
     - JSON token conversion to plain dictionaries/arrays (`JsonConversionExtensions`)
@@ -90,7 +90,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.0.0.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.0.0.md)
+- Current release notes: [RaiUtils_RELEASE_NOTES_4.0.1.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.0.1.md)
 
 ## unit tests
 
