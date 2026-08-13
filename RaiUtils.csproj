@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtils</PackageId>
-				<Version>4.0.1</Version>
+				<Version>4.1.0</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -19,7 +19,7 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-				<PackageReleaseNotes>4.0.1 coordinated patch alignment for CR006; no RaiUtils API or behavior changes from 4.0.0.</PackageReleaseNotes>
+				<PackageReleaseNotes>4.1.0 implements CR008 shared RaiException and ToolNotFoundException domain boundaries.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<PackageIcon>HardCastle.png</PackageIcon>
