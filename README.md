@@ -28,35 +28,25 @@ RaiUtils
 
 ## classes
 
-<details>
-<summary>Email: Validates an email address string using regex.</summary>
+### Email: Validates an email address string using regex.
 
 - Email: `Valid`, `Invalid`, `ToString`
-</details>
 
-<details>
-<summary>JsonConversionExtensions: Converts `JObject` and `JArray` to plain .NET dictionary/array trees.</summary>
+### JsonConversionExtensions: Converts `JObject` and `JArray` to plain .NET dictionary/array trees.
 
 - JsonConversionExtensions: `ToDictionary`, `ToArray`
-</details>
 
-<details>
-<summary>ParameterDictionary: StringDictionary filtered to lowercase keys from NameValueCollection.</summary>
+### ParameterDictionary: StringDictionary filtered to lowercase keys from NameValueCollection.
 
 - ParameterDictionary: constructor with lowercase-key import behavior
-</details>
 
-<details>
-<summary>RandomExtensions: Random element selection and shuffle helpers for `IEnumerable` and `IList`.</summary>
+### RandomExtensions: Random element selection and shuffle helpers for `IEnumerable` and `IList`.
 
 - RandomExtensions: `Random`, `Shuffle`, `TakeAny`
-</details>
 
-<details>
-<summary>SearchExpression: Parses text search patterns and evaluates matches against object properties.</summary>
+### SearchExpression: Parses text search patterns and evaluates matches against object properties.
 
 - SearchExpression: `ConditionsAsString`, `IsMatch(object)`
-</details>
 
 ## dependencies
 
@@ -87,7 +77,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## detailed api
 
-- Foldable class and method-level documentation: [API.md](API.md)
+- Foldable class and method-level documentation: [API.md](https://github.com/Burkhardt/RaiUtils/blob/main/API.md)
 
 ## release notes
 

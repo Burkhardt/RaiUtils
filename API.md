@@ -2,12 +2,20 @@
 
 This document provides a detailed, foldable API overview.
 
-## 4.0.0 scope note
+## 4.1.0 scope note
 
-- RaiUtils aligns with the `4.0.0` `RAIkeep` package line.
-- Coordinated release: no API changes; aligns the package line relative to `OsLibCore 4.0.0`.
+- RaiUtils aligns with the coordinated `4.1.0` RAIkeep package line.
+- `RaiException` provides the dependency-light base for RAIkeep domain exceptions.
+- `ToolNotFoundException` reports a missing external executable without leaking raw `System.IO.FileNotFoundException` across package boundaries.
 
 ## core types
+
+- <details>
+	<summary>RaiException and ToolNotFoundException: shared domain exception roots.</summary>
+
+	- `RaiException` is the common base for package-specific RAIkeep failures and supports messages plus inner exceptions.
+	- `ToolNotFoundException` identifies an unavailable external tool and may carry the tool name or executable boundary context.
+	</details>
 
 - <details>
 	<summary>Email: regex-based email syntax validator.</summary>
