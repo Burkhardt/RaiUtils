@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtils</PackageId>
-				<Version>4.2.0</Version>
+				<Version>4.2.2</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Random, Email, ParameterDictionary</Description>
@@ -19,7 +19,7 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-				<PackageReleaseNotes>4.2.0 aligns RaiUtils with the seven-package RAIkeep release and supports RaiDiagram's shared exception boundary.</PackageReleaseNotes>
+				<PackageReleaseNotes>4.2.2 coordinated dependency release for CR008, CR009, CR010, and the dependency-light CR014 boundary.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<PackageIcon>HardCastle.png</PackageIcon>
