@@ -2,9 +2,9 @@
 
 This document provides a detailed, foldable API overview.
 
-## 4.2.3 scope note
+## 4.2.4 scope note
 
-- RaiUtils aligns with the coordinated seven-package `4.2.3` RAIkeep line.
+- RaiUtils aligns with the coordinated seven-package `4.2.4` RAIkeep line.
 - `RaiException` provides the dependency-light base for RAIkeep domain exceptions.
 - `ToolNotFoundException` reports a missing external executable without leaking raw `System.IO.FileNotFoundException` across package boundaries.
 

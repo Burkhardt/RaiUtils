@@ -6,6 +6,12 @@ RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/
 
 _formerly_ __RaiUtilsCore__
 
+## 4.2.4
+
+- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.4 release implementing accepted CR016.
+- The shared `RaiException` and `ToolNotFoundException` contract carries forward unchanged.
+- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.4.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.4.md)
+
 ## 4.2.3
 
 - Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.3 release implementing CR015.
@@ -82,7 +88,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.3.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.3.md)
+- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.4.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.4.md)
 
 ## unit tests
 
