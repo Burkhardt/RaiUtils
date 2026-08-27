@@ -6,16 +6,16 @@ RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/
 
 _formerly_ __RaiUtilsCore__
 
-## 4.2.2
+## 4.2.3
 
-- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.2 release implementing CR010 and completing the CR008/CR009 patch boundaries.
+- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.3 release implementing CR015.
 - Adds `RaiException`, the dependency-light base for RAIkeep domain exceptions.
 - Adds `ToolNotFoundException` with stable tool-name and executable-path diagnostics.
 - Establishes the shared exception boundary used by RaiImage and the upcoming RaiDiagram package.
 - Keeps RaiUtils aligned with the `mkdir` polymorphism update line introduced in OsLib.
 - Documents the supported cloud-backed provider claim used with OsLib and JsonPit: `Dropbox`, `OneDrive`, `GoogleDrive`, and `ICloudDrive`.
 - Notes the JsonPit identifier migration from `Name` to `Id`, including legacy normalization behavior.
-- Refreshes live package docs for the `4.2.2` line.
+- Refreshes live package docs for the `4.2.3` line.
 - Provides utility helpers for:
     - Email syntax validation (`Email`)
     - JSON token conversion to plain dictionaries/arrays (`JsonConversionExtensions`)
@@ -82,7 +82,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.2.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.2.md)
+- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.3.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.3.md)
 
 ## unit tests
 
