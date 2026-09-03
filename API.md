@@ -2,13 +2,36 @@
 
 This document provides a detailed, foldable API overview.
 
-## 4.2.5 scope note
+## 4.2.6 scope note
 
-- RaiUtils aligns with the coordinated seven-package `4.2.5` RAIkeep line.
+- RaiUtils implements accepted CR019 in the coordinated seven-package `4.2.6` RAIkeep line.
+- `WordCase` and `StringHelper` are now canonically owned by RaiUtils rather than RaiImage.
+- `WordSeams(value)` provides lossless Unicode text-element-aware UTF-16 offsets for consumer-defined soft wrapping.
 - `RaiException` provides the dependency-light base for RAIkeep domain exceptions.
 - `ToolNotFoundException` reports a missing external executable without leaking raw `System.IO.FileNotFoundException` across package boundaries.
 
 ## core types
+
+- <details>
+	<summary>StringHelper: case conversion, token splitting, and lossless display seams.</summary>
+
+	- `ToTitle(value)` uppercases the first code unit and lowercases the remainder, preserving the established behavior moved from RaiImage.
+	- `WordSplit(value)` returns normalized word tokens; separators are intentionally omitted for case conversion.
+	- `CamelSplit(value)` remains a compatibility alias for `WordSplit(value)`.
+	- `WordSeams(value)` returns strictly increasing UTF-16 offsets into the unchanged input.
+	- Seam rules cover Pascal/camel transitions, acronym endings, digit-run openings, and `_ - . / \\ @ : [ ] ( ) { }` delimiters.
+	- Apostrophes and whitespace are not delimiters. Delimiter seams are left-biased.
+	- Unicode text elements keep surrogate pairs and base-plus-combining-mark sequences indivisible.
+	</details>
+
+- <details>
+	<summary>WordCase: token-backed case conversion model.</summary>
+
+	- Constructors accept an arbitrary mixed-case string or a word array.
+	- `Array` and `String` expose the token form and legacy PascalCase form.
+	- `PascalCase`, `LowerCamelCase`, `SnakeCase`, and `KebabCase` provide explicit projections.
+	- `CamelCaseString` and `DashCase` remain compatibility aliases.
+	</details>
 
 - <details>
 	<summary>RaiException and ToolNotFoundException: shared domain exception roots.</summary>

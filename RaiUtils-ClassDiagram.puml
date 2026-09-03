@@ -1,5 +1,5 @@
 @startuml RaiUtils-Class-Diagram
-' Release: 4.0.0
+' Release: 4.2.6
 
 title RaiUtils Class Diagram
 
@@ -34,6 +34,25 @@ show fields
 show methods
 
 package "RaiUtils" {
+	class "<size:18>StringHelper</size> Ⓢ" as StringHelper {
+		+{static} ToTitle(anyCase : string) : string
+		+{static} WordSplit(anyCase : string) : string[]
+		+{static} CamelSplit(anyCase : string) : string[]
+		+{static} WordSeams(value : string) : int[]
+	}
+
+	class "<size:18>WordCase</size>" as WordCase {
+		+Array : string[]
+		+String : string
+		+PascalCase : string
+		+LowerCamelCase : string
+		+SnakeCase : string
+		+KebabCase : string
+		+DashCase : string
+		+WordCase(words : string[])
+		+WordCase(anyCase : string)
+	}
+
 	class "<size:18>Email</size>" as Email {
 		-address : string
 		+Valid : bool
@@ -76,6 +95,7 @@ ParameterDictionary --|> StringDictionary
 ParameterDictionary ..> NameValueCollection : ctor input
 JsonConversionExtensions ..> JObject : extension on
 JsonConversionExtensions ..> JArray : extension on
+StringHelper ..> WordCase : creates
 
 class "Legend<size:10>ⓈⒶⓅ</size>" as LegendSample {
 	+{static} staticMethod() : void
@@ -102,6 +122,13 @@ note right of SearchExpression
 	- wildcard matching
 	- `+` means AND within a token
 	- `field=value` scopes matching
+end note
+
+note right of StringHelper
+	CR019 canonical home.
+	WordSeams returns lossless
+	UTF-16 display offsets and
+	preserves Unicode text elements.
 end note
 
 note bottom

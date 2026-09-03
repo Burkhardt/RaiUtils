@@ -2,21 +2,29 @@
 
 RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/`](https://github.com/Burkhardt/RAIkeep/tree/main/doc) directory under `RaiUtils_...` filenames; they are not stored separately in this child repository.
 
-    Random, Email, ParameterDictionary, JSON conversion helpers, and lightweight search expressions.
+    Shared exceptions, word-case and Unicode seam helpers, JSON conversion, search, email, parameters, and randomization.
 
 _formerly_ __RaiUtilsCore__
+
+## 4.2.6
+
+- Implements accepted CR019 by making RaiUtils the canonical home of `WordCase`, `StringHelper`, `WordSplit`, `CamelSplit`, and `ToTitle`.
+- Adds `WordSeams()`, which returns strictly increasing UTF-16 soft-wrap offsets into the unchanged source string.
+- Preserves Unicode text elements, including decomposed combining sequences and surrogate pairs.
+- Covers Pascal/camel joins, acronym endings, digit runs, compound separators, structured labels, and apostrophe preservation.
+- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.6.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.6.md)
 
 ## 4.2.5
 
 - Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.5 release implementing accepted CR017.
 - The exception surface is unchanged.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.5.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.5.md)
+- 4.2.5 release notes: [RaiUtils_RELEASE_NOTES_4.2.5.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.5.md)
 
 ## 4.2.4
 
 - Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.4 release implementing accepted CR016.
 - The shared `RaiException` and `ToolNotFoundException` contract carries forward unchanged.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.5.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.5.md)
+- 4.2.4 release notes: [RaiUtils_RELEASE_NOTES_4.2.4.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.4.md)
 
 ## 4.2.3
 
@@ -40,6 +48,16 @@ _formerly_ __RaiUtilsCore__
 RaiUtils
 
 ## classes
+
+### StringHelper: general casing, word splitting, and lossless display-seam extensions.
+
+- StringHelper: `ToTitle`, `WordSplit`, `CamelSplit`, `WordSeams`
+- `WordSeams` returns UTF-16 offsets; callers slice the immutable original and choose their own presentation mechanism.
+
+### WordCase: converts between PascalCase, lower camelCase, snake_case, kebab-case, and token arrays.
+
+- WordCase: `Array`, `String`, `PascalCase`, `LowerCamelCase`, `SnakeCase`, `KebabCase`
+- Usage and seam semantics: [CASE_CONVERSION.md](https://github.com/Burkhardt/RaiUtils/blob/main/CASE_CONVERSION.md)
 
 ### Email: Validates an email address string using regex.
 
@@ -94,7 +112,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- 4.2.4 release notes: [RaiUtils_RELEASE_NOTES_4.2.4.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.4.md)
+- Latest release notes: [RaiUtils_RELEASE_NOTES_4.2.6.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.6.md)
 
 ## unit tests
 

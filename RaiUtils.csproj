@@ -3,23 +3,23 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtils</PackageId>
-				<Version>4.2.5</Version>
+				<Version>4.2.6</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Description>Random, Email, ParameterDictionary</Description>
+				<Description>Shared RAIkeep exceptions, word-case and Unicode seam helpers, JSON conversion, search, email, parameters, and randomization.</Description>
 		<!--<PackageDescription>Random,
 		Email, ParameterDictionary</PackageDescription>-->
 		<TargetFramework>net10.0</TargetFramework>
 		<NoWarn>$(NoWarn);CS1591</NoWarn>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<PackageTags>email, parameter dictionary, random, core</PackageTags>
+				<PackageTags>word case, unicode, text seams, email, parameter dictionary, random, core</PackageTags>
 		<IsPackable>true</IsPackable>
 		<ProjectURL>https://github.com/Burkhardt/RaiUtils</ProjectURL>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-				<PackageReleaseNotes>4.2.5 coordinated dependency release for accepted CR017.</PackageReleaseNotes>
+				<PackageReleaseNotes>4.2.6 implements accepted CR019 WordCase relocation and Unicode-safe WordSeams.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<PackageIcon>HardCastle.png</PackageIcon>
