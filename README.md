@@ -6,6 +6,12 @@ RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/
 
 _formerly_ __RaiUtilsCore__
 
+## 4.2.7
+
+- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.7 release implementing accepted CR020.
+- The RaiUtils public API is unchanged from 4.2.6.
+- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.7.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.7.md)
+
 ## 4.2.6
 
 - Implements accepted CR019 by making RaiUtils the canonical home of `WordCase`, `StringHelper`, `WordSplit`, `CamelSplit`, and `ToTitle`.
@@ -112,7 +118,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Latest release notes: [RaiUtils_RELEASE_NOTES_4.2.6.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.6.md)
+- Latest release notes: [RaiUtils_RELEASE_NOTES_4.2.7.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.7.md)
 
 ## unit tests
 
