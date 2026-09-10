@@ -2,9 +2,9 @@
 
 This document provides a detailed, foldable API overview.
 
-## 4.2.8 scope note
+## 4.2.9 scope note
 
-- RaiUtils carries its accepted CR019 API unchanged in the coordinated seven-package `4.2.8` CR021 line.
+- RaiUtils carries its accepted CR019 API unchanged in the coordinated seven-package `4.2.9` CR022 incident-correction line.
 - `WordCase` and `StringHelper` are now canonically owned by RaiUtils rather than RaiImage.
 - `WordSeams(value)` provides lossless Unicode text-element-aware UTF-16 offsets for consumer-defined soft wrapping.
 - `RaiException` provides the dependency-light base for RAIkeep domain exceptions.
