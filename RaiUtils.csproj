@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<Title>RaiUtils</Title>
 		<PackageId>RaiUtils</PackageId>
-				<Version>4.2.10</Version>
+				<Version>4.2.11</Version>
 		<Authors>Rainer Burkhardt</Authors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 				<Description>Shared RAIkeep exceptions, word-case and Unicode seam helpers, JSON conversion, search, email, parameters, and randomization.</Description>
@@ -19,7 +19,7 @@
 		<Copyright>© Rainer Burkhardt. All rights reserved.</Copyright>
 		<RepositoryUrl>https://github.com/Burkhardt/RaiUtils</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-				<PackageReleaseNotes>4.2.10 coordinated RAIkeep release; RaiUtils behavior is unchanged.</PackageReleaseNotes>
+				<PackageReleaseNotes>4.2.11 coordinated RAIkeep release; RaiUtils behavior is unchanged.</PackageReleaseNotes>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<PackageIcon>HardCastle.png</PackageIcon>
