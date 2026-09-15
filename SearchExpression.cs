@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-// TODO "Helena Vera"
-// TODO soften up the AND meaning of '+' and ' '
-
-// / <summary>
-// / based on Modenova Project (c) 2015 Rainer Burkhardt 
-// / also based on HDitem (c) 2013 JgenCy Project Inc.
-// / </summary>
+// Copyright © 2026 Rainer Burkhardt
+// Licensed under the Apache License, Version 2.0
 namespace RaiUtils
 {
     /// <summary>
