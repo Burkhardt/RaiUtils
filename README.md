@@ -6,10 +6,10 @@ RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/
 
 _formerly_ __RaiUtilsCore__
 
-## 4.4.0
+## 4.4.1
 
-- Participates in the synchronized eight-package RAIkeep v4.4.0 CR036 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.4.0.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.0.md)
+- Participates unchanged in the synchronized eight-package RAIkeep v4.4.1 CR037 release.
+- Current release notes: [RaiUtils_RELEASE_NOTES_4.4.1.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.1.md)
 
 ## 4.3.2
 
@@ -159,7 +159,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Latest release notes: [RaiUtils_RELEASE_NOTES_4.4.0.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.0.md)
+- Latest release notes: [RaiUtils_RELEASE_NOTES_4.4.1.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.1.md)
 
 ## unit tests
 
