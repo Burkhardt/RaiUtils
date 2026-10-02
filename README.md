@@ -1,5 +1,12 @@
 # RaiUtils
 
+## 4.4.8
+
+Coordinated 4.4.8 utility dependency; public behavior is unchanged.
+
+Release notes: [RaiUtils_RELEASE_NOTES_4.4.8.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.8.md).
+
+
 RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/`](https://github.com/Burkhardt/RAIkeep/tree/main/doc) directory under `RaiUtils_...` filenames; they are not stored separately in this child repository.
 
     Shared exceptions, word-case and Unicode seam helpers, JSON conversion, search, email, parameters, and randomization.
