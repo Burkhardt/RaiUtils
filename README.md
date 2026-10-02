@@ -6,6 +6,12 @@ RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/
 
 _formerly_ __RaiUtilsCore__
 
+## 4.4.6
+
+Participates in the synchronized 4.4.6 dependency line. Existing word-case normalization remains authoritative for image names.
+
+Release notes: [RaiUtils_RELEASE_NOTES_4.4.6.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.6.md).
+
 ## 4.4.5
 
 - Participates unchanged in the synchronized nine-package CR047 release.
