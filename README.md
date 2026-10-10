@@ -1,5 +1,11 @@
 # RaiUtils
 
+## 4.5.8
+
+Coordinated 4.5.8 release; public behavior is aligned with the synchronized platform.
+
+Release notes: [RaiUtils_RELEASE_NOTES_4.5.8.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.8.md).
+
 ## 4.5.7
 
 Coordinated 4.5.7 release; public behavior is aligned with the synchronized platform.
@@ -229,7 +235,7 @@ https://www.nuget.org/packages/RaiUtils/
 
 ## release notes
 
-- Latest release notes: [RaiUtils_RELEASE_NOTES_4.5.7.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.7.md)
+- Latest release notes: [RaiUtils_RELEASE_NOTES_4.5.8.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.8.md)
 
 ## unit tests
 
