@@ -4,167 +4,27 @@
 
 Coordinated 4.5.8 release; public behavior is aligned with the synchronized platform.
 
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.8.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.8.md).
+Latest release notes: [RaiUtils 4.5.8 release notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md#458).
 
-## 4.5.7
+## Previous Versions
 
-Coordinated 4.5.7 release; public behavior is aligned with the synchronized platform.
+For release notes and changelogs of earlier releases, see the [RaiUtils 4.x Release Notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md).
 
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.7.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.7.md).
+## Installation
 
-## 4.5.6
+### .NET CLI
 
-Coordinated 4.5.6 release; public behavior is aligned with the synchronized platform.
+```bash
+dotnet add package RaiUtils --version 4.5.8
+```
 
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.6.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.6.md).
+### PackageReference
 
-## 4.5.5
+```xml
+<PackageReference Include="RaiUtils" Version="4.5.8" />
+```
 
-Coordinated 4.5.5 release; public behavior is aligned with the synchronized platform.
-
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.5.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.5.md).
-
-## 4.5.4
-
-Coordinated 4.5.4 release; public behavior is aligned with the synchronized platform.
-
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.4.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.4.md).
-
-## 4.5.3
-
-Coordinated 4.5.3 release; public behavior is aligned with the synchronized platform.
-
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.3.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.3.md).
-
-## 4.5.2
-
-Coordinated 4.5.2 release; public behavior is aligned with the synchronized platform.
-
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.2.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.2.md).
-
-## 4.5.0
-
-Coordinated 4.5.0 utility dependency; public behavior is unchanged.
-
-Release notes: [RaiUtils_RELEASE_NOTES_4.5.0.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.0.md).
-
-## 4.4.8
-
-Coordinated 4.4.8 utility dependency; public behavior is unchanged.
-
-Release notes: [RaiUtils_RELEASE_NOTES_4.4.8.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.8.md).
-
-
-RaiUtils change requests and release notes are centralized in the RAIkeep [`doc/`](https://github.com/Burkhardt/RAIkeep/tree/main/doc) directory under `RaiUtils_...` filenames; they are not stored separately in this child repository.
-
-    Shared exceptions, word-case and Unicode seam helpers, JSON conversion, search, email, parameters, and randomization.
-
-_formerly_ __RaiUtilsCore__
-
-## 4.4.6
-
-Participates in the synchronized 4.4.6 dependency line. Existing word-case normalization remains authoritative for image names.
-
-Release notes: [RaiUtils_RELEASE_NOTES_4.4.6.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.6.md).
-
-## 4.4.5
-
-- Participates unchanged in the synchronized nine-package CR047 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.4.5.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.5.md)
-
-## 4.4.4
-
-- Participates unchanged in the synchronized nine-package CR044 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.4.4.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.4.md)
-
-## 4.4.2
-
-- Participates unchanged in the synchronized eight-package CR040/CR041 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.4.2.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.2.md)
-
-## 4.4.1
-
-- Participates unchanged in the synchronized eight-package RAIkeep v4.4.1 CR037 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.4.1.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.4.1.md)
-
-## 4.3.2
-
-- Participates unchanged in the coordinated seven-package RAIkeep v4.3.2 CR027 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.3.2.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.3.2.md)
-
-## 4.3.1
-
-- Participates unchanged in the coordinated seven-package RAIkeep v4.3.1 CR026 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.3.1.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.3.1.md)
-
-## 4.3.0
-
-- Participates unchanged in the coordinated seven-package v4.3.0 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.3.0.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.3.0.md)
-
-## 4.2.11 (superseded before publication)
-
-- This prepared line was not published; its changes are carried by v4.3.0.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.11.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.11.md)
-
-## 4.2.10
-
-- Participates unchanged in the coordinated seven-package v4.2.10 release.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.10.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.10.md)
-
-## 4.2.9
-
-- Participates unchanged in the coordinated seven-package v4.2.9 CR022 incident-correction line.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.9.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.9.md)
-
-## 4.2.8
-
-- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.8 release implementing accepted CR021.
-- Public behavior remains unchanged from 4.2.7.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.8.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.8.md)
-
-## 4.2.7
-
-- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.7 release implementing accepted CR020.
-- The RaiUtils public API is unchanged from 4.2.6.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.7.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.7.md)
-
-## 4.2.6
-
-- Implements accepted CR019 by making RaiUtils the canonical home of `WordCase`, `StringHelper`, `WordSplit`, `CamelSplit`, and `ToTitle`.
-- Adds `WordSeams()`, which returns strictly increasing UTF-16 soft-wrap offsets into the unchanged source string.
-- Preserves Unicode text elements, including decomposed combining sequences and surrogate pairs.
-- Covers Pascal/camel joins, acronym endings, digit runs, compound separators, structured labels, and apostrophe preservation.
-- Current release notes: [RaiUtils_RELEASE_NOTES_4.2.6.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.6.md)
-
-## 4.2.5
-
-- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.5 release implementing accepted CR017.
-- The exception surface is unchanged.
-- 4.2.5 release notes: [RaiUtils_RELEASE_NOTES_4.2.5.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.5.md)
-
-## 4.2.4
-
-- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.4 release implementing accepted CR016.
-- The shared `RaiException` and `ToolNotFoundException` contract carries forward unchanged.
-- 4.2.4 release notes: [RaiUtils_RELEASE_NOTES_4.2.4.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.2.4.md)
-
-## 4.2.3
-
-- Aligns RaiUtils with the coordinated seven-package RAIkeep 4.2.3 release implementing CR015.
-- Adds `RaiException`, the dependency-light base for RAIkeep domain exceptions.
-- Adds `ToolNotFoundException` with stable tool-name and executable-path diagnostics.
-- Establishes the shared exception boundary used by RaiImage and the upcoming RaiDiagram package.
-- Keeps RaiUtils aligned with the `mkdir` polymorphism update line introduced in OsLib.
-- Documents the supported cloud-backed provider claim used with OsLib and JsonPit: `Dropbox`, `OneDrive`, `GoogleDrive`, and `ICloudDrive`.
-- Notes the JsonPit identifier migration from `Name` to `Id`, including legacy normalization behavior.
-- Refreshes live package docs for the `4.2.3` line.
-- Provides utility helpers for:
-    - Email syntax validation (`Email`)
-    - JSON token conversion to plain dictionaries/arrays (`JsonConversionExtensions`)
-    - Lowercase key filtering for incoming name-value parameters (`ParameterDictionary`)
-    - Randomization extensions for enumerable/list sources (`RandomExtensions`)
-    - Wildcard-and expression matching against object properties (`SearchExpression`)
+RaiUtils provides shared exceptions, word-case and Unicode helpers, JSON conversion, search, email, parameters, and randomization. It was formerly named RaiUtilsCore.
 
 ## namespace
 
@@ -232,10 +92,6 @@ https://www.nuget.org/packages/RaiUtils/
 ## detailed api
 
 - Foldable class and method-level documentation: [API.md](https://github.com/Burkhardt/RaiUtils/blob/main/API.md)
-
-## release notes
-
-- Latest release notes: [RaiUtils_RELEASE_NOTES_4.5.8.md](https://github.com/Burkhardt/RAIkeep/blob/main/doc/RaiUtils_RELEASE_NOTES_4.5.8.md)
 
 ## unit tests
 
