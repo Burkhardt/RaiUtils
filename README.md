@@ -1,10 +1,10 @@
 # RaiUtils
 
-## 4.5.13
+## 4.5.14
 
-Coordinated 4.5.13 release; public behavior is aligned with the synchronized platform.
+Coordinated 4.5.14 release; public behavior is aligned with the synchronized platform.
 
-Latest release notes: [RaiUtils 4.5.13 release notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md#4513).
+Latest release notes: [RaiUtils 4.5.14 release notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md#4514).
 
 ## Previous Versions
 
@@ -15,13 +15,13 @@ For release notes and changelogs of earlier releases, see the [RaiUtils 4.x Rele
 ### .NET CLI
 
 ```bash
-dotnet add package RaiUtils --version 4.5.13
+dotnet add package RaiUtils --version 4.5.14
 ```
 
 ### PackageReference
 
 ```xml
-<PackageReference Include="RaiUtils" Version="4.5.13" />
+<PackageReference Include="RaiUtils" Version="4.5.14" />
 ```
 
 RaiUtils provides shared exceptions, word-case and Unicode helpers, JSON conversion, search, email, parameters, and randomization. It was formerly named RaiUtilsCore.
