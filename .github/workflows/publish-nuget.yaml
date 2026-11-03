@@ -60,7 +60,37 @@ jobs:
         run: dotnet build RaiUtils.slnx --configuration Release --no-restore
 
       - name: Pack
-        run: dotnet pack RaiUtils.csproj --configuration Release --no-build --output artifacts
+        shell: bash
+        run: |
+          PACKAGE_OUTPUT="$RUNNER_TEMP/raiutils-nuget-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+          printf 'PACKAGE_OUTPUT=%s\n' "$PACKAGE_OUTPUT" >> "$GITHUB_ENV"
+          dotnet pack RaiUtils.csproj --configuration Release --no-build --output "$PACKAGE_OUTPUT"
+
+      - name: Verify publication package
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          import zipfile
+
+          version = os.environ["RELEASE_REF"][1:]
+          output = Path(os.environ["PACKAGE_OUTPUT"])
+          expected = output / f"RaiUtils.{version}.nupkg"
+          packages = list(output.glob("*.nupkg"))
+          if packages != [expected]:
+              raise SystemExit(f"Expected only {expected.name}; found {[p.name for p in packages]}")
+          with zipfile.ZipFile(expected) as archive:
+              manifests = [name for name in archive.namelist() if name.endswith(".nuspec")]
+              if len(manifests) != 1:
+                  raise SystemExit("Package must contain exactly one nuspec")
+              root = ET.fromstring(archive.read(manifests[0]))
+          values = {node.tag.rsplit("}", 1)[-1]: node.text for node in root.iter()}
+          if values.get("id") != "RaiUtils" or values.get("version") != version:
+              raise SystemExit("Package identity/version does not match the release")
+          print(f"Verified RaiUtils {version}")
+          PY
 
       - name: NuGet login (Trusted Publishing)
         uses: NuGet/login@v1
@@ -70,7 +100,7 @@ jobs:
 
       - name: Publish to NuGet
         run: |
-          dotnet nuget push "artifacts/*.nupkg" \
+          dotnet nuget push "$PACKAGE_OUTPUT/RaiUtils.${RELEASE_REF#v}.nupkg" \
             --api-key "${{ steps.nuget_login.outputs.NUGET_API_KEY }}" \
             --source "https://api.nuget.org/v3/index.json" \
             --skip-duplicate
