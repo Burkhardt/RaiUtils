@@ -1,10 +1,10 @@
 # RaiUtils
 
-## 4.6.0
+## 4.6.1
 
 Remove tracked legacy 2.3.1 packages. Pack into an isolated run-specific directory, validate the exact package ID and version, and publish only the requested RaiUtils package.
 
-Latest release notes: [RaiUtils 4.6.0 release notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md#460).
+Latest release notes: [RaiUtils 4.6.1 release notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md#461).
 
 ## Previous Versions
 
@@ -15,13 +15,13 @@ For release notes and changelogs of earlier releases, see the [RaiUtils 4.x Rele
 ### .NET CLI
 
 ```bash
-dotnet add package RaiUtils --version 4.6.0
+dotnet add package RaiUtils --version 4.6.1
 ```
 
 ### PackageReference
 
 ```xml
-<PackageReference Include="RaiUtils" Version="4.6.0" />
+<PackageReference Include="RaiUtils" Version="4.6.1" />
 ```
 
 RaiUtils provides shared exceptions, word-case and Unicode helpers, JSON conversion, search, email, parameters, and randomization. It was formerly named RaiUtilsCore.
