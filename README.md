@@ -1,5 +1,7 @@
 # RaiUtils
 
+[Code signing policy](https://github.com/Burkhardt/RAIkeep/blob/main/README_codesigning.md)
+
 ## 4.6.5
 
 Remove tracked legacy 2.3.1 packages. Pack into an isolated run-specific directory, validate the exact package ID and version, and publish only the requested RaiUtils package.
