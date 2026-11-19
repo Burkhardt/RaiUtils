@@ -1,12 +1,12 @@
 # RaiUtils
 
-[Code signing policy](https://github.com/Burkhardt/RAIkeep/blob/main/README_codesigning.md)
+[Code signing policy](https://github.com/Burkhardt/RAIkeep/blob/main/README_codesigning.md) · SignPath Foundation application in preparation; signing is not yet active.
 
-## 4.6.5
+## 4.6.6
 
 Remove tracked legacy 2.3.1 packages. Pack into an isolated run-specific directory, validate the exact package ID and version, and publish only the requested RaiUtils package.
 
-Latest release notes: [RaiUtils 4.6.5 release notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md#465).
+Latest release notes: [RaiUtils 4.6.6 release notes](https://github.com/Burkhardt/RAIkeep/blob/main/doc/releases/v4.x/RaiUtils_RELEASE_NOTES_4.x.md#466).
 
 ## Previous Versions
 
@@ -17,13 +17,13 @@ For release notes and changelogs of earlier releases, see the [RaiUtils 4.x Rele
 ### .NET CLI
 
 ```bash
-dotnet add package RaiUtils --version 4.6.5
+dotnet add package RaiUtils --version 4.6.6
 ```
 
 ### PackageReference
 
 ```xml
-<PackageReference Include="RaiUtils" Version="4.6.5" />
+<PackageReference Include="RaiUtils" Version="4.6.6" />
 ```
 
 RaiUtils provides shared exceptions, word-case and Unicode helpers, JSON conversion, search, email, parameters, and randomization. It was formerly named RaiUtilsCore.
