@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace RaiUtils.Tests;
@@ -7,7 +8,7 @@ public class JsonConversionExtensionsTests
 	[Fact]
 	public void ToDictionary_ConvertsNestedObjectsAndArrays()
 	{
-		var json = JObject.Parse(
+		var json = JsonConvert.DeserializeObject<JObject>(
 			"""
 			{
 			  "name": "root",
@@ -18,7 +19,7 @@ public class JsonConversionExtensionsTests
 				[9, 10]
 			  ]
 			}
-			""");
+			""", new JsonSerializerSettings { DateParseHandling = DateParseHandling.None })!;
 
 		var result = json.ToDictionary();
 
@@ -43,14 +44,14 @@ public class JsonConversionExtensionsTests
 	[Fact]
 	public void ToArray_ConvertsMixedContentRecursively()
 	{
-		var array = JArray.Parse(
+		var array = JsonConvert.DeserializeObject<JArray>(
 			"""
 			[
 			  { "x": 1 },
 			  [2, { "y": "z" }],
 			  "tail"
 			]
-			""");
+			""", new JsonSerializerSettings { DateParseHandling = DateParseHandling.None })!;
 
 		var result = array.ToArray();
 

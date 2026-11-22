@@ -33,10 +33,10 @@ namespace RaiUtils
 		private static void ProcessJArrayProperties(IDictionary<string, object> propertyValuePairs)
 		{
 			var arrayPropertyNames = (from property in propertyValuePairs
-											  let propertyName = property.Key
-											  let value = property.Value
-											  where value is JArray
-											  select propertyName).ToList();
+												let propertyName = property.Key
+												let value = property.Value
+												where value is JArray
+												select propertyName).ToList();
 
 			arrayPropertyNames.ForEach(propertyName => propertyValuePairs[propertyName] = ToArray((JArray)propertyValuePairs[propertyName]));
 		}
